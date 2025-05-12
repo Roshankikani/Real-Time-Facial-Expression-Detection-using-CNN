@@ -52,14 +52,22 @@ This script initiates webcam access and performs real-time facial expression rec
 
 > Press **'q'** to quit the webcam interface.
 
-## 📁 File Structure
+## 📁 Files
 
-.
-├── webcam_test.py # Real-time detection script
-├── Real-Time Facial Expression Detection.ipynb # Model training & evaluation
-├── Facial Expression Recognition.json # Model architecture
-├── fer.h5 # Trained model weights
-├── haarcascade_frontalface_default.xml # Haar cascade for face detection
+- `webcam_test.py`  
+  Real-time detection script using webcam and CNN model.
+
+- `Real-Time Facial Expression Detection.ipynb`  
+  Jupyter Notebook for training, validating, and evaluating the CNN model.
+
+- `Facial Expression Recognition.json`  
+  Serialized CNN architecture in JSON format.
+
+- `fer.h5`  
+  Pre-trained model weights for facial emotion classification.
+
+- `haarcascade_frontalface_default.xml`  
+  Haar cascade classifier for frontal face detection using OpenCV.
 
 
 ## 🧠 Core Functions (for reference)
@@ -71,13 +79,6 @@ This script initiates webcam access and performs real-time facial expression rec
 | `detectMultiScale()` | Detects objects (faces) in grayscale frames. |
 | `model.predict()` | Performs emotion classification on face images. |
 
-## 🖥 Requirements
-
-- Python 3.x
-- TensorFlow ≥ 2.12.0
-- OpenCV
-- NumPy
-- Keras (comes with TensorFlow 2.x)
 
 ## 🚀 How to Run
 
